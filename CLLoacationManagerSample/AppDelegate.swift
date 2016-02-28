@@ -7,16 +7,37 @@
 //
 
 import UIKit
+import CoreLocation
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
 
     var window: UIWindow?
-
+    
+    var locationManager: CLLocationManager!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        initLocationManager()
+        
         return true
+    }
+    
+    func initLocationManager() {
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
+        locationManager.requestAlwaysAuthorization()
+        locationManager.startUpdatingLocation()
+    }
+    
+    func locationManager(manager:CLLocationManager, didUpdateLocations locations:[CLLocation]) {
+        print("locations = \(locations)")
+    }
+    
+    func locationManager(manager: CLLocationManager,
+        didFailWithError error: NSError) {
+            print("map error")
     }
 
     func applicationWillResignActive(application: UIApplication) {
