@@ -14,6 +14,7 @@
 		B5D763821C82F74E00CA222F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D763801C82F74E00CA222F /* LaunchScreen.storyboard */; };
 		B5D7638D1C82F74F00CA222F /* CLLoacationManagerSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D7638C1C82F74F00CA222F /* CLLoacationManagerSampleTests.swift */; };
 		B5D763981C82F74F00CA222F /* CLLoacationManagerSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D763971C82F74F00CA222F /* CLLoacationManagerSampleUITests.swift */; };
+		B5D763A71C82F7B500CA222F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D763A51C82F78700CA222F /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B5D763931C82F74F00CA222F /* CLLoacationManagerSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLLoacationManagerSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D763971C82F74F00CA222F /* CLLoacationManagerSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLoacationManagerSampleUITests.swift; sourceTree = "<group>"; };
 		B5D763991C82F74F00CA222F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5D763A51C82F78700CA222F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D763A71C82F7B500CA222F /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		B5D7636B1C82F74E00CA222F = {
 			isa = PBXGroup;
 			children = (
+				B5D763A51C82F78700CA222F /* CoreLocation.framework */,
 				B5D763761C82F74E00CA222F /* CLLoacationManagerSample */,
 				B5D7638B1C82F74F00CA222F /* CLLoacationManagerSampleTests */,
 				B5D763961C82F74F00CA222F /* CLLoacationManagerSampleUITests */,
